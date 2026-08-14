@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Muscle Culture | Premium Gym & Fitness Center in Dahisar East, Mumbai</title>
+    <meta name="description" content="Transform your body at The Muscle Culture, Dahisar East's premier gym. State-of-the-art equipment, elite personal trainers, and a results-driven fitness community. Claim your free trial pass today!">
+    
+    <!-- Tailwind CSS CDN for Rapid, Responsive Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Outfit for Modern Headlines & Inter for Crisp UI Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Conversion Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#EF4444',
+                            darkred: '#DC2626',
+                            dark: '#0A0A0A',
+                            card: '#141414',
+                            border: '#262626'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(10,10,10,0.95) 100%), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2">
+                <span class="font-heading font-extrabold text-2xl tracking-wider text-white">THE MUSCLE <span class="text-brand-red">CULTURE</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#about" class="hover:text-brand-red transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-red transition-colors">Programs</a>
+                <a href="#why-us" class="hover:text-brand-red transition-colors">Why Us</a>
+                <a href="#results" class="hover:text-brand-red transition-colors">Results</a>
+                <a href="#contact" class="hover:text-brand-red transition-colors">Location & Contact</a>
+            </nav>
+
+            <!-- Action CTA -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="bg-brand-red hover:bg-brand-darkred text-white font-heading font-bold uppercase tracking-wider text-sm px-5 py-3 rounded-lg shadow-lg shadow-brand-red/20 transition-all transform hover:-translate-y-0.5">
+                    Claim Free Trial
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-brand-border px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-brand-red font-medium">About</a>
+            <a href="#services" class="block py-2 text-gray-300 hover:text-brand-red font-medium">Programs</a>
+            <a href="#why-us" class="block py-2 text-gray-300 hover:text-brand-red font-medium">Why Us</a>
+            <a href="#results" class="block py-2 text-gray-300 hover:text-brand-red font-medium">Results</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-brand-red font-medium">Location & Contact</a>
+            <a href="#contact" class="block text-center bg-brand-red text-white font-heading font-bold uppercase py-3 rounded-lg mt-2">Claim Free Trial</a>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-bg min-h-screen flex items-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Content Left -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-brand-red/10 border border-brand-red/30 px-4 py-1.5 rounded-full text-brand-red text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-location-dot"></i> Dahisar East, Mumbai • Premier Fitness Hub
+                </div>
+                
+                <h1 class="font-heading font-extrabold text-4xl sm:text-6xl tracking-tight leading-none text-white">
+                    BUILD REAL STRENGTH. <span class="text-brand-red">TRANSFORM YOUR LIFE.</span>
+                </h1>
+                
+                <p class="text-gray-300 text-lg sm:text-xl font-normal max-w-2xl mx-auto lg:mx-0">
+                    Step into Dahisar’s most motivating fitness culture. Elite certified trainers, state-of-the-art heavy lifting & cardio equipment, and a results-driven community waiting for you.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto bg-brand-red hover:bg-brand-darkred text-white font-heading font-bold uppercase tracking-wider text-base px-8 py-4 rounded-xl shadow-xl shadow-brand-red/30 transition-all text-center">
+                        Book Free Trial Pass
+                    </a>
+                    <a href="https://wa.me/918871999699?text=Hi,%20I%20want%20to%20know%20more%20about%20The%20Muscle%20Culture%20gym%20membership." target="_blank" class="w-full sm:w-auto bg-brand-card hover:bg-neutral-800 border border-brand-border text-white font-heading font-semibold uppercase tracking-wider text-base px-6 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="pt-8 border-t border-brand-border/60 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-gray-400 text-sm">
+                    <div class="flex items-center gap-2">
+                        <div class="text-yellow-400 flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-white font-bold">5.0 Rating</span> (39+ Reviews)
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-check text-brand-red text-lg"></i>
+                        <span>100% Hygienic Facility</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Right / Quick Lead Box -->
+            <div class="lg:col-span-5">
+                <div class="bg-brand-card/90 backdrop-blur-xl border border-brand-border p-6 sm:p-8 rounded-2xl shadow-2xl relative">
+                    <div class="absolute -top-3 right-6 bg-brand-red text-white font-heading font-bold text-xs uppercase px-3 py-1 rounded-full shadow-md">
+                        Limited Time Offer
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-2">Claim Your Free Trial Pass</h3>
+                    <p class="text-gray-400 text-sm mb-6">Experience our world-class gym floor and expert trainer guidance firsthand.</p>
+                    
+                    <form onsubmit="handleLeadSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Full Name</label>
+                            <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Phone Number</label>
+                            <input type="tel" required placeholder="e.g. +91 98765 43210" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Fitness Goal</label>
+                            <select class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                                <option>Weight Loss & Tone-up</option>
+                                <option>Muscle Building & Powerlifting</option>
+                                <option>General Fitness & Stamina</option>
+                                <option>Personal Training</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-red hover:bg-brand-darkred text-white font-heading font-bold uppercase tracking-wider py-3.5 rounded-lg transition-all shadow-lg shadow-brand-red/20">
+                            Get Instant Access Pass
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2. PROBLEM SECTION -->
+    <section class="py-20 bg-neutral-950 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    TIRED OF GYMS THAT <span class="text-brand-red">DON’T DELIVER RESULTS?</span>
+                </h2>
+                <p class="text-gray-400 text-base sm:text-lg">Most people fail their fitness journeys not due to lack of effort, but due to the wrong environment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Problem Card 1 -->
+                <div class="bg-brand-card border border-brand-border p-8 rounded-xl relative">
+                    <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center text-brand-red text-xl font-bold mb-6">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Crowded & Unorganized Floors</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Waiting 20 minutes for a single machine ruins workout momentum and kills your motivation to stay consistent.</p>
+                </div>
+                <!-- Problem Card 2 -->
+                <div class="bg-brand-card border border-brand-border p-8 rounded-xl relative">
+                    <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center text-brand-red text-xl font-bold mb-6">
+                        <i class="fa-solid fa-user-slash"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Zero Professional Guidance</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Working out blindly without expert trainer correction leads to plateaus, poor form, and potential joint injuries.</p>
+                </div>
+                <!-- Problem Card 3 -->
+                <div class="bg-brand-card border border-brand-border p-8 rounded-xl relative">
+                    <div class="w-12 h-12 bg-brand-red/10 rounded-lg flex items-center justify-center text-brand-red text-xl font-bold mb-6">
+                        <i class="fa-solid fa-broom"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Unhygienic & Poorly Maintained</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sweat-stained equipment, bad ventilation, and unmanaged crowds create an unpleasant, uninspiring training ambiance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOLUTION SECTION -->
+    <section id="about" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <div class="inline-block bg-brand-red/10 text-brand-red px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
+                    The Solution
+                </div>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+                    WELCOME TO <span class="text-brand-red">THE MUSCLE CULTURE</span>
+                </h2>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Located conveniently near the metro station in Dahisar East, Mumbai, we built a sanctuary for serious transformation. Whether you are lifting heavy or stepping inside a gym for the very first time, our state-of-the-art facility provides a meticulously clean, elite, and deeply supportive atmosphere.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="border-l-2 border-brand-red pl-4">
+                        <h4 class="font-heading font-bold text-2xl text-white">6 AM - 11 PM</h4>
+                        <p class="text-gray-400 text-sm">Flexible operating hours to fit your busy schedule.</p>
+                    </div>
+                    <div class="border-l-2 border-brand-red pl-4">
+                        <h4 class="font-heading font-bold text-2xl text-white">Top Trainers</h4>
+                        <p class="text-gray-400 text-sm">Certified professionals dedicated to your individual growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80" alt="Gym weights" class="rounded-xl object-cover h-64 w-full shadow-lg">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Fitness training" class="rounded-xl object-cover h-64 w-full shadow-lg mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BENEFITS SECTION -->
+    <section class="py-20 bg-neutral-950 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    WHAT YOU GAIN WHEN YOU <span class="text-brand-red">TRAIN WITH US</span>
+                </h2>
+                <p class="text-gray-400">Real outcomes engineered for real individuals.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+                    <div class="text-brand-red text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Accelerated Fat Loss</h3>
+                    <p class="text-gray-400 text-sm">Shed stubborn body fat rapidly with high-intensity equipment and expert dietary mapping.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+                    <div class="text-brand-red text-3xl mb-4"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Sustainable Muscle Gain</h3>
+                    <p class="text-gray-400 text-sm">Build lean, powerful muscle mass safely using heavy-duty power racks and professional guidance.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+                    <div class="text-brand-red text-3xl mb-4"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Mental Clarity & Energy</h3>
+                    <p class="text-gray-400 text-sm">Crush daily stress and boost natural energy levels through structured physical exertion.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+                    <div class="text-brand-red text-3xl mb-4"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Unbreakable Consistency</h3>
+                    <p class="text-gray-400 text-sm">Join an inspiring community of fitness enthusiasts that hold you accountable to your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SERVICES / PROGRAMS -->
+    <section id="services" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    OUR SIGNATURE <span class="text-brand-red">FITNESS PROGRAMS</span>
+                </h2>
+                <p class="text-gray-400">Tailored programs engineered for maximum physical adaptation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Strength & Powerlifting" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-heading font-bold text-2xl text-white mb-2">Strength & Powerlifting</h3>
+                            <p class="text-gray-400 text-sm mb-4">Advanced resistance training formats designed for serious muscle mass growth and absolute power development.</p>
+                            <ul class="space-y-2 text-sm text-gray-300 mb-6">
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Heavy-Duty Racks & Platforms</li>
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Custom Progression Tracking</li>
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Certified Spotters & Trainers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-brand-red/10 hover:bg-brand-red text-brand-red hover:text-white font-heading font-bold uppercase text-sm py-3 rounded-lg border border-brand-red/30 transition-all">
+                            Enquire About Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Personal Training" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-heading font-bold text-2xl text-white mb-2">1-on-1 Personal Training</h3>
+                            <p class="text-gray-400 text-sm mb-4">Dedicated 1-on-1 coaching customized completely to your unique body type, injuries, and lifestyle goals.</p>
+                            <ul class="space-y-2 text-sm text-gray-300 mb-6">
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Customized Workout Routines</li>
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Tailored Diet & Macro Plans</li>
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Weekly Body Composition Audits</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-brand-red/10 hover:bg-brand-red text-brand-red hover:text-white font-heading font-bold uppercase text-sm py-3 rounded-lg border border-brand-red/30 transition-all">
+                            Enquire About Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Functional Training & Cardio" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-heading font-bold text-2xl text-white mb-2">Functional & Cardio Fitness</h3>
+                            <p class="text-gray-400 text-sm mb-4">High-energy core conditioning, endurance training, and functional movements to burn calories and build stamina.</p>
+                            <ul class="space-y-2 text-sm text-gray-300 mb-6">
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Modern Cardio Machines</li>
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Agility & Core Workouts</li>
+                                <li><i class="fa-solid fa-check text-brand-red mr-2"></i> Fat-Torching Circuits</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-brand-red/10 hover:bg-brand-red text-brand-red hover:text-white font-heading font-bold uppercase text-sm py-3 rounded-lg border border-brand-red/30 transition-all">
+                            Enquire About Program
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. WHY CHOOSE US -->
+    <section id="why-us" class="py-20 bg-neutral-950 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block bg-brand-red/10 text-brand-red px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
+                        Competitive Advantage
+                    </div>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+                        WHY DAHISAR FITNESS ENTHUSIASTS <span class="text-brand-red">CHOOSE US</span>
+                    </h2>
+                    <p class="text-gray-300 text-base">
+                        We don't just sell memberships; we guarantee an upscale, clean, and motivating environment where your fitness goals become reality.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand-red text-white p-2 rounded-lg mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white text-lg">Prime Accessible Location</h4>
+                                <p class="text-gray-400 text-sm">Situated right near Dahisar East Metro Station & opposite Hanuman Mandir.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand-red text-white p-2 rounded-lg mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white text-lg">Client Membership Mobile App</h4>
+                                <p class="text-gray-400 text-sm">Track your attendance, view custom diet plans, and check membership expiry instantly on our dedicated app.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-brand-red text-white p-2 rounded-lg mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-heading font-bold text-white text-lg">Immaculate Cleanliness Standards</h4>
+                                <p class="text-gray-400 text-sm">Sanitized equipment and hygienic floor protocols maintained throughout operating hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-brand-card border border-brand-border p-8 rounded-2xl shadow-2xl space-y-6">
+                        <h3 class="font-heading font-bold text-2xl text-white text-center">Facility Highlights</h3>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-brand-dark p-4 rounded-xl border border-brand-border">
+                                <span class="block font-heading font-extrabold text-3xl text-brand-red mb-1">5.0</span>
+                                <span class="text-gray-400 text-xs uppercase">Google Rating</span>
+                            </div>
+                            <div class="bg-brand-dark p-4 rounded-xl border border-brand-border">
+                                <span class="block font-heading font-extrabold text-3xl text-brand-red mb-1">17 hrs</span>
+                                <span class="text-gray-400 text-xs uppercase">Daily Access (6AM-11PM)</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-brand-red/10 border border-brand-red/20 rounded-xl text-center">
+                            <p class="text-gray-300 text-sm">"Whether you're lifting heavy or just starting out, we provide a clean, motivating environment."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. RESULTS / CASE STUDIES -->
+    <section id="results" class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    MEASURABLE <span class="text-brand-red">TRANSFORMATIONS</span>
+                </h2>
+                <p class="text-gray-400">See what our members achieve with customized training and proper nutrition tracking.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6 space-y-4">
+                    <div class="flex justify-between items-center text-xs text-brand-red font-bold uppercase tracking-wider">
+                        <span>Fat Loss & Tone</span>
+                        <span>12 Weeks</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white">Lost 14 KGs of Stubborn Fat</h3>
+                    <p class="text-gray-400 text-sm">"The trainers at The Muscle Culture corrected my form and mapped out a custom diet plan on their member app. Completely transformed my physique."</p>
+                    <div class="pt-4 border-t border-brand-border text-sm text-gray-300 font-semibold">— Sameer K., Dahisar Member</div>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6 space-y-4">
+                    <div class="flex justify-between items-center text-xs text-brand-red font-bold uppercase tracking-wider">
+                        <span>Muscle Building</span>
+                        <span>16 Weeks</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white">Gained 8.5 KGs of Lean Muscle</h3>
+                    <p class="text-gray-400 text-sm">"The heavy lifting setup here is unmatched in Dahisar. The spotters and trainers genuinely care about your progression."</p>
+                    <div class="pt-4 border-t border-brand-border text-sm text-gray-300 font-semibold">— Mihir P., Powerlifting Program</div>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6 space-y-4">
+                    <div class="flex justify-between items-center text-xs text-brand-red font-bold uppercase tracking-wider">
+                        <span>Endurance & Fitness</span>
+                        <span>8 Weeks</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white">Total Body Recomposition</h3>
+                    <p class="text-gray-400 text-sm">"I was a complete beginner. The environment is extremely welcoming and non-judgmental. Best gym experience in Mumbai."</p>
+                    <div class="pt-4 border-t border-brand-border text-sm text-gray-300 font-semibold">— Pooja S., General Fitness</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS -->
+    <section class="py-20 bg-neutral-950 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    TRUSTED BY <span class="text-brand-red">OUR COMMUNITY</span>
+                </h2>
+                <div class="flex items-center justify-center gap-2 text-yellow-400 text-xl">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <span class="text-white font-bold text-base ml-2">5.0 / 5.0 Average Google Rating</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border relative">
+                    <p class="text-gray-300 text-sm mb-6">"Welcome to the best gym experience in Dahisar East! Extremely clean environment, top-notch trainers, and state-of-the-art equipment. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-red text-white font-bold rounded-full flex items-center justify-center">A</div>
+                        <div>
+                            <h4 class="font-heading font-bold text-white text-sm">Aakash Verma</h4>
+                            <span class="text-gray-400 text-xs">Verified Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-xl border border-brand-border relative">
+                    <p class="text-gray-300 text-sm mb-6">"Great supportive atmosphere whether you're lifting heavy or starting out. The facility is well-maintained and opening hours until 11 PM help me fit workouts after long office hours."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-red text-white font-bold rounded-full flex items-center justify-center">R</div>
+                        <div>
+                            <h4 class="font-heading font-bold text-white text-sm">Rohan Mehta</h4>
+                            <span class="text-gray-400 text-xs">Verified Gym Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. SPECIAL OFFER SECTION -->
+    <section class="py-16 bg-gradient-to-r from-red-900 via-brand-dark to-neutral-950 border-t border-b border-brand-red/30">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+            <span class="bg-brand-red text-white text-xs font-heading font-bold uppercase px-3 py-1 rounded-full">Limited Period Promotion</span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white">GET 1 DAY FREE TRIAL + FITNESS ASSESSMENT</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">No commitments required. Experience the equipment, speak directly with expert trainers, and get a body composition analysis.</p>
+            <div class="pt-2">
+                <a href="#contact" class="inline-block bg-white text-brand-dark hover:bg-gray-100 font-heading font-extrabold uppercase px-8 py-4 rounded-xl shadow-2xl transition-all">
+                    Claim My Free Pass Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. HOW IT WORKS -->
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    HOW TO GET <span class="text-brand-red">STARTED</span>
+                </h2>
+                <p class="text-gray-400">Three simple steps to launch your fitness evolution.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-card p-8 rounded-xl border border-brand-border text-center space-y-4">
+                    <div class="w-12 h-12 bg-brand-red text-white font-heading font-bold text-xl rounded-full flex items-center justify-center mx-auto">1</div>
+                    <h3 class="font-heading font-bold text-xl text-white">Claim Your Free Pass</h3>
+                    <p class="text-gray-400 text-sm">Fill out our quick form or message us on WhatsApp to lock in your free trial date.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-xl border border-brand-border text-center space-y-4">
+                    <div class="w-12 h-12 bg-brand-red text-white font-heading font-bold text-xl rounded-full flex items-center justify-center mx-auto">2</div>
+                    <h3 class="font-heading font-bold text-xl text-white">Visit Our Dahisar Gym</h3>
+                    <p class="text-gray-400 text-sm">Meet our expert trainers at NL Plaza, check out our clean floor, and run through your evaluation.</p>
+                </div>
+                <div class="bg-brand-card p-8 rounded-xl border border-brand-border text-center space-y-4">
+                    <div class="w-12 h-12 bg-brand-red text-white font-heading font-bold text-xl rounded-full flex items-center justify-center mx-auto">3</div>
+                    <h3 class="font-heading font-bold text-xl text-white">Begin Transforming</h3>
+                    <p class="text-gray-400 text-sm">Choose your membership package and get instant access to our exclusive client app for diet and workout tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FAQ SECTION -->
+    <section class="py-20 bg-neutral-950 border-t border-brand-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mb-4">
+                    FREQUENTLY ASKED <span class="text-brand-red">QUESTIONS</span>
+                </h2>
+                <p class="text-gray-400">Everything you need to know before joining.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6">
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">What are the gym operating hours?</h3>
+                    <p class="text-gray-400 text-sm">The Muscle Culture is open Monday through Saturday from 6:00 AM to 11:00 PM, and Sundays from 9:00 AM to 2:00 PM.</p>
+                </div>
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6">
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Where is the gym located in Dahisar East?</h3>
+                    <p class="text-gray-400 text-sm">We are located at 107, 108, NL Plaza building, near the metro station, Gawde Nagar, opposite Hanuman Mandir, Ghartan Pada, Dahisar East, Mumbai 400068.</p>
+                </div>
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6">
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Are personal trainers available for beginners?</h3>
+                    <p class="text-gray-400 text-sm">Yes! We provide elite certified trainers who specialize in working with absolute beginners to ensure proper form, safety, and rapid results.</p>
+                </div>
+                <div class="bg-brand-card border border-brand-border rounded-xl p-6">
+                    <h3 class="font-heading font-bold text-lg text-white mb-2">Do you have a mobile app for members?</h3>
+                    <p class="text-gray-400 text-sm">Yes, members can use our dedicated client app to check attendance, view custom workout and diet plans, and track membership status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. LOCATION, CONTACT & LEAD FORM -->
+    <section id="contact" class="py-20 bg-brand-dark border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact & Map Info -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block bg-brand-red/10 text-brand-red px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
+                        Get In Touch
+                    </div>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+                        VISIT OUR FACILITY IN <span class="text-brand-red">DAHISAR EAST</span>
+                    </h2>
+                    <p class="text-gray-300 text-sm">
+                        Drop by for a tour or contact us directly via phone or WhatsApp to book your session.
+                    </p>
+
+                    <div class="space-y-4 text-gray-300 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-red text-lg mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Address:</strong>
+                                107, 108, NL Plaza Building, near Metro Station, Gawde Nagar, opposite Hanuman Mandir, Ghartan Pada, Dahisar East, Mumbai, Maharashtra 400068.
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-red text-lg"></i>
+                            <div>
+                                <strong class="text-white">Phone / WhatsApp:</strong> +91 88719 99699
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clock text-brand-red text-lg"></i>
+                            <div>
+                                <strong class="text-white">Timing:</strong> Mon-Sat: 6 AM - 11 PM | Sun: 9 AM - 2 PM
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Google Map Embed -->
+                    <div class="rounded-xl overflow-hidden border border-brand-border h-64 w-full shadow-lg">
+                        <iframe title="The Muscle Culture Location Map" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.357503763784!2d72.8572!3d19.2483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b134d1234567%3A0x123456789abcdef!2sNL%20Plaza%2C%20Ghartan%20Pada%2C%20Dahisar%20East%2C%20Mumbai%2C%20Maharashtra%20400068!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"></iframe>
+                    </div>
+                </div>
+
+                <!-- Action Lead Generation Form -->
+                <div class="lg:col-span-6 bg-brand-card border border-brand-border p-8 rounded-2xl shadow-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-2xl text-white mb-2">Claim Your Free Consultation & Trial Pass</h3>
+                        <p class="text-gray-400 text-sm mb-6">Fill out the quick form below and our team will get in touch with you within 15 minutes.</p>
+                        
+                        <form onsubmit="handleLeadSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Your Name *</label>
+                                <input type="text" required placeholder="e.g. Amit Patel" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Phone Number *</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Email Address</label>
+                                    <input type="email" placeholder="amit@example.com" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Select Requirement / Interest</label>
+                                <select class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
+                                    <option>Free Trial Pass</option>
+                                    <option>Gym Membership Pricing Inquiry</option>
+                                    <option>1-on-1 Personal Training Details</option>
+                                    <option>General Support / Call Back</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-gray-400 mb-1">Message (Optional)</label>
+                                <textarea rows="3" placeholder="Any specific fitness goals or questions?" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-red hover:bg-brand-darkred text-white font-heading font-bold uppercase tracking-wider py-4 rounded-xl transition-all shadow-lg shadow-brand-red/30">
+                                Submit & Claim Offer
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- WhatsApp Quick Trigger -->
+                    <div class="mt-6 pt-6 border-t border-brand-border text-center">
+                        <p class="text-gray-400 text-xs mb-3">Prefer quick communication?</p>
+                        <a href="https://wa.me/918871999699?text=Hi,%20I%20want%20to%20know%20more%20about%20membership%20pricing%20at%20The%20Muscle%20Culture." target="_blank" class="inline-flex items-center justify-center gap-2 w-full bg-neutral-900 hover:bg-neutral-800 text-white font-heading font-bold uppercase py-3 rounded-lg border border-green-500/30 transition-all text-sm">
+                            <i class="fa-brands fa-whatsapp text-green-500 text-lg"></i> Instant Chat via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-brand-border text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="font-heading font-extrabold text-xl tracking-wider text-white">THE MUSCLE <span class="text-brand-red">CULTURE</span></span>
+                <p class="text-xs text-gray-400 mt-1">Dahisar East, Mumbai’s premier strength & powerlifting facility.</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Programs</a>
+                <a href="#why-us" class="hover:text-white transition-colors">Why Us</a>
+                <a href="#contact" class="hover:text-white transition-colors">Location</a>
+            </div>
+            <div class="text-xs text-gray-400 text-center md:text-right">
+                &copy; 2026 The Muscle Culture. All Rights Reserved.<br>
+                Designed for Maximum Conversion & User Experience.
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Mobile Menu Toggle Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Conversion Lead Form Handler Mock
+        function handleLeadSubmit(event) {
+            event.preventDefault();
+            alert('Thank you! Your request has been successfully submitted. Our team at The Muscle Culture will reach out to you within 15 minutes to confirm your free pass.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
